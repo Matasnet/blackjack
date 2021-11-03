@@ -1,4 +1,6 @@
 "use strict";
+
+//Basic
 let game = false;
 const as = 1;
 const J = 10;
@@ -10,6 +12,7 @@ let yourCards = [];
 let enemyCards = [];
 
 
+//Start
 function start() {
     if (game == true) {
         console.log('Już zacząłeś !');
@@ -60,7 +63,7 @@ function start() {
 console.log(yourCards);
 console.log(enemyCards);
 
-
+// Next card 
 function nextcard() {
     if (game == true) {
         console.log("Gramy");
@@ -129,7 +132,7 @@ function nextcard() {
     }
 }
 
-
+// Check cards
 function check() {
 
   let sum1 = 0;
