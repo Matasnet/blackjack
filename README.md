@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [How it is working] (#work)
+* [How it's working](#working)
 
 
 ## General info
@@ -21,7 +21,7 @@ Project is created with:
 ## Setup
 To run this project, you must just open index.html file. 
 
-## How it's working
+## How it is working
 
 Basic rules of the game:
 * The one with the higher score wins,
