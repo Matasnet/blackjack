@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [How it's working] (#work)
 
 
 ## General info
@@ -19,3 +20,4 @@ Project is created with:
 
 ## Setup
 To run this project, you must just open index.html file. 
+
