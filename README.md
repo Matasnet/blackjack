@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [How it's working](#working)
+* [How it's working](#how-it-is-working)
 
 
 ## General info
