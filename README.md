@@ -5,7 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [How it's working] (#work)
+* [How it is working] (#work)
 
 
 ## General info
@@ -21,3 +21,10 @@ Project is created with:
 ## Setup
 To run this project, you must just open index.html file. 
 
+## How it's working
+
+Basic rules of the game:
+* The one with the higher score wins,
+* You or your enemy can't have more than 21 point,
+* On start you and your enemy get 2 cards,
+* When you want to draw a card, your enemy decides whether to make or not.
