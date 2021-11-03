@@ -1,0 +1,52 @@
+*{
+    margin: 1%;
+}
+
+#table{
+    background-color: green;
+    height: auto;
+}
+
+#enemy{
+    background-color: grey;
+    height: auto;
+    text-align: center;
+    font-size:25px;
+}
+
+#hand{
+    background-color: grey;
+    height: auto;
+    text-align: center;
+    font-style: normal;
+    font-size:25px;
+}
+
+.loss {
+    text-align: center;
+    color:red;
+    text-decoration: ivory;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    text-transform: uppercase;
+}
+
+.win {
+    text-align: center;
+    color:rgb(25, 255, 4);
+    text-decoration: ivory;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    text-transform: uppercase;
+}
+
+footer {
+
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    text-align: center;
+    width:100%;
+
+    color: rgb(29, 32, 30);
+}
