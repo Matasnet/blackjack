@@ -1,6 +1,4 @@
 "use strict";
-
-//Basic
 let game = false;
 const as = 1;
 const J = 10;
@@ -12,7 +10,6 @@ let yourCards = [];
 let enemyCards = [];
 
 
-//Start
 function start() {
     if (game == true) {
         console.log('Już zacząłeś !');
@@ -39,7 +36,7 @@ function start() {
       const msg1 = `Posidasz obecnie następujące karty ${yourCards} o łącznej wartości ${sum1}`;
        const objTo = document.getElementById('hand');
        const showMsg1 = document.createElement("p");
-       showMsg1.classList.add("start")
+       showMsg1.classList.add("your-hand")
        showMsg1.innerHTML = msg1;
        objTo.appendChild(showMsg1);
 
@@ -47,6 +44,7 @@ function start() {
        const msg2 = `Przeciwnik posiada obecnie następujące karty X oraz ${enemyCards[1]} o wartości powyżej ${sum2-enemyCards[0]}`;
        const objTo2 = document.getElementById('enemy');
        const showMsg2 = document.createElement("p");
+       showMsg2.classList.add("enemy-hand")
        showMsg2.innerHTML = msg2;
        objTo2.appendChild(showMsg2);
 
@@ -63,7 +61,7 @@ function start() {
 console.log(yourCards);
 console.log(enemyCards);
 
-// Next card 
+
 function nextcard() {
     if (game == true) {
         console.log("Gramy");
@@ -132,7 +130,7 @@ function nextcard() {
     }
 }
 
-// Check cards
+
 function check() {
 
   let sum1 = 0;
@@ -172,6 +170,20 @@ function check() {
         const showMsg2 = document.createElement("p");
         showMsg2.innerHTML = msg2;
         objTo2.appendChild(showMsg2);
+      }
+      else if (sum1 <=21 && sum2 > sum1) {console.log('Wygrałeś')
+      const wynik = `Wygrałeś`;
+      const objTo = document.getElementById('result');
+      const showResult = document.createElement("p");
+      showResult.classList.add("win")
+      showResult.innerHTML = wynik;
+      objTo.appendChild(showResult);
+
+      const msg2 = `Przeciwnik posiadał karty ${enemyCards} o wartości ${sum2}`;
+      const objTo2 = document.getElementById('enemy');
+      const showMsg2 = document.createElement("p");
+      showMsg2.innerHTML = msg2;
+      objTo2.appendChild(showMsg2);
       } 
         else {console.log('Przegrałeś')
         const wynik = `Przegrałeś ponieważ przeciwnik miał lepszy wynik`;
@@ -191,7 +203,7 @@ function check() {
         console.log("Nie możesz sprawdzić");
     }
 
-    return game = true;
+    return game = false;
 }
 
 
